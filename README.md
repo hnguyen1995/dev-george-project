@@ -3,7 +3,7 @@
 
 #  Dev Able: Brainstorm Board
 
-A fully frontend web app for managing project ideas — add, edit, delete, and export brainstorms. Built with HTML, CSS (Bootstrap), and JavaScript. 
+A fully frontend web app for managing project ideas — add, edit, delete, and export brainstorms.
 
 ## 🚀 Live Site
 
