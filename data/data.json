@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "New Web App Design",
+    "description": "This is an exciting new project for building a modern web app."
+  },
+  {
+    "id": 2,
+    "title": "Game Development Project",
+    "description": "Let's create a fun and engaging game for mobile devices!"
+  },
+  {
+    "id": 3,
+    "title": "E-Commerce Platform",
+    "description": "An idea to develop a new e-commerce platform with cool features."
+  }
+]
