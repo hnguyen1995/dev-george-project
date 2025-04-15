@@ -19,5 +19,4 @@ A fully frontend web app for managing project ideas — add, edit, delete, and e
 - 💾 Data loads from external `data/data.json`
 - 🧰 Responsive layout with Bootstrap 5
 
-## 📁 Project Structure
 
