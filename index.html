@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Able: Brainstorm Board</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">🧠 DevAble</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+        </ul>
+        <span id="userGreeting" class="navbar-text me-3"></span>
+        <button class="btn btn-outline-primary" id="loginBtn" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="username" class="form-label">Name</label>
+              <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Brainstorm Board</h1>
+    <p class="text-center">Add, edit, or delete ideas. Login to get started!</p>
+
+    <div class="d-flex justify-content-center gap-2 mb-3">
+      <button id="loadSampleBtn" class="btn btn-info">Load Sample</button>
+      <button id="exportBtn" class="btn btn-success">Export JSON</button>
+    </div>
+
+    <form id="ideaForm" class="mb-5">
+      <div class="mb-3">
+        <label for="ideaTitle" class="form-label">Title</label>
+        <input type="text" class="form-control" id="ideaTitle" required>
+      </div>
+      <div class="mb-3">
+        <label for="ideaDescription" class="form-label">Description</label>
+        <textarea class="form-control" id="ideaDescription" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Idea</button>
+    </form>
+
+    <div id="ideaList" class="row gy-4"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-light">
+    <p>&copy; 2025 DevAble Project</p>
+    <a href="https://github.com/hnguyen1995" target="_blank">GitHub Profile</a> |
+    <a href="https://validator.w3.org/nu/" target="_blank">HTML Validator</a> |
+    <a href="https://wave.webaim.org/" target="_blank">WAVE Tool</a> |
+    <a href="images/wireframe.png" target="_blank">Wireframe</a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
